@@ -2,8 +2,6 @@ require 'net/http'
 require 'json'
 require_relative '../lib/controller_base'
 
-require 'byebug'
-
 class GifsController < ControllerBase
   protect_from_forgery
 
