@@ -11,7 +11,10 @@
   <ul class ='index'>
     <% @gifs.each do |gif| %>
       <li class='gif'>
-        <img src="<%= gif[:image][:url] %>" width="<%=gif[:width]%>" height="<%= gif[:height] %>"/>
+        <a href="<%= gif[:url] %>">
+          <img src="<%= gif[:image][:url] %>" width="<%=gif[:width]%>"
+            height="<%= gif[:height] %>"/>
+        </a>
       </li>
     <% end %>
   </ul>

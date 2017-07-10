@@ -9,15 +9,17 @@
       value="<%= form_authenticity_token %>"/>
     <input type="text" name="keyword" placeholder="Search again..."/>
     <button id="search-btn" type="submit">Search</button>
-    <a href='/'>Back to Trending</a>
+    <a class="button" href='/'>Back to Trending</a>
   </form>
 </header>
 <content>
 <ul class ='search'>
   <% @gifs.each do |gif| %>
     <li class='gif'>
-      <img src="<%= gif[:image][:url] %>" width="<%=gif[:width]%>"
-        height="<%= gif[:height] %>"/>
+      <a href="<%= gif[:url] %>">
+        <img src="<%= gif[:image][:url] %>" width="<%=gif[:width]%>"
+          height="<%= gif[:height] %>"/>
+      </a>
     </li>
   <% end %>
 </ul>

@@ -75,7 +75,7 @@ If the route path regular expression contains named groups, Tracks also extracts
 
 Tracks includes these Rack middlewares to serve static assets and to handle errors:
 
-Middleware|Description
+Name | Description
 ----|----
 **Static** | Serves static assets from the ```/assets``` folder. When possible, it infers the MIME type from the file extension and otherwise serves plain text.
 **ShowExceptions** | Renders detailed errors messages when the controller raises an exception. The message includes the file name, line number and a snippet of the surrounding code.
@@ -86,7 +86,7 @@ See [demo_server.rb](https://github.com/dextersealy/ruby-on-tracks/blob/master/d
 
 ### Running the Example app
 
-The demo application displays trending GIFs of the day and allows you to search for GIFs by keyword.  To run it you need up-to-date versions of [Ruby](https://www.ruby-lang.org/en/) and [Bundler](http://bundler.io). 
+The demo application displays trending GIFs of the day and allows you to search for GIFs by keyword.  To run it you need up-to-date versions of [Ruby](https://www.ruby-lang.org/en/) and [Bundler](http://bundler.io).
 
 1. `git clone` [https://github.com/dextersealy/ruby-on-tracks](https://github.com/dextersealy/ruby-on-tracks)
 2. `bundle install`
