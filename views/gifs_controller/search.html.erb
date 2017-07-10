@@ -1,0 +1,24 @@
+<header>
+  <h1>Search results</h1>
+  <!--
+    This search could be a GET request but using POST to demonstrate
+    how to user the authenticity_token
+  -->
+  <form action="/search" method="post">
+    <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>"/>
+    <input type="text" name="keyword" placeholder="Search again..."/>
+    <button id="search-btn" type="submit">Search</button>
+    <a href='/'>Back to Trending</a>
+  </form>
+</header>
+<content>
+<ul class ='search'>
+  <% @gifs.each do |gif| %>
+    <li class='gif'>
+      <img src="<%= gif[:image][:url] %>" width="<%=gif[:width]%>"
+        height="<%= gif[:height] %>"/>
+    </li>
+  <% end %>
+</ul>
+</content>

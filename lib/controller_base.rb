@@ -116,14 +116,14 @@ class ControllerBase
   end
 
   def check_authenticity_token
-    cookie = @req.cookies['authenticity_token']
+    cookie = @req.cookies['_tracks_app_token']
     raise 'Invalid authenticity token' unless
       cookie && cookie == params['authenticity_token']
   end
 
   def form_authenticity_token
     @token ||= generate_authenticity_token
-    @res.set_cookie('authenticity_token', value: @token, path: '/')
+    @res.set_cookie('_tracks_app_token', value: @token)
     @token
   end
 

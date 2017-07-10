@@ -1,0 +1,73 @@
+ul, li, div, h1, h2, header, button, input, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  background: transparent;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  font-size: 12px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #076390;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+h1 {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+input {
+  background: white;
+  border-radius: 2px;
+  padding: 4px;
+  margin-right: 5px;
+}
+
+button, a {
+  background: #FFA741;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 4px 10px;
+}
+
+button:hover, a:hover {
+  background-color: #1876A3;
+}
+
+/* Content */
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+img {
+  max-width: 400px;
+}

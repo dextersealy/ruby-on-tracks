@@ -1,16 +1,13 @@
 require 'rack'
 require 'optparse'
-require_relative 'controllers/chess_controller'
 require_relative 'lib/router'
 require_relative 'lib/static'
+require_relative 'controllers/gifs_controller'
 
 router = Router.new
 router.draw do
-  get Regexp.new("^/chess$"), ChessController, :show
-  post Regexp.new("^/chess/new$"), ChessController, :new
-  get Regexp.new("^/chess/moves$"), ChessController, :moves
-  post Regexp.new("^/chess/moves$"), ChessController, :move
-  get Regexp.new("^/chess/move$"), ChessController, :make_move
+  get Regexp.new("^/$"), GifsController, :show
+  post Regexp.new("^/search$"), GifsController, :search
 end
 
 app = Proc.new do |env|
