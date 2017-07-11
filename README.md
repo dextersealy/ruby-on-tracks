@@ -65,7 +65,7 @@ router.draw do
 end
 ```
 
-The first argument is the HTTP action. Next is a regular expression to match against the request path. Lastly you specify the class name of the target controller and, the action to invoke.
+The first argument is the HTTP action. Next is a regular expression to match against the request path. Lastly you specify the class name of the target controller and the action to invoke.
 
 Tracks automatically extracts parameters from the URL query string and makes them available through the controller's ```params``` method. For convenience, ```params``` accepts both strings and symbols to identity parameters
 
