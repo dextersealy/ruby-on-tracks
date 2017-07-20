@@ -92,3 +92,9 @@ The demo application displays trending GIFs of the day and allows you to search 
 2. `bundle install`
 3. `ruby demo_server.rb`
 4. Visit `http://localhost:3000`
+
+## License
+
+Tracks Copyright (c) Dexter Sealy
+
+Tracks is free software; you can distribute it and/or modify it subject to the terms of the [MIT license](https://opensource.org/licenses/MIT).
