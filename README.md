@@ -29,7 +29,7 @@ You render the CSRF token into a hidden form field as follows:
 
 In the example application ```controllers/gifs_controller.rb``` implements the application controller.
 
-It's *show* and *search* actions do not explicitly render results, but instead rely on ControllerBase to automatically render the default namesake template when an action neither renders nor redirects.
+Its *show* and *search* actions do not explicitly render results, but instead rely on ControllerBase to automatically render the default namesake template when an action neither renders nor redirects.
 
 ```ruby
 require_relative '../lib/controller_base'
